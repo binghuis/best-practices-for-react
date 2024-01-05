@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 如何使用 React
 
-## Getting Started
+本项目按照 React 18 最新文档结合代码探索各个 Hook 、API 和 组件的实践。
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+`use`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [读取 context](./app/use-w-context/page.tsx)
+- [读取 Promise](./app/use-w-promise/page.tsx)
+- [将数据从服务器流式传递给客户端](./app/use-w-stream/page.tsx)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`useContext`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [读取 context](./app/use-context/page.tsx)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+`useMemo`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [值记忆化](./app/use-memo/page.tsx)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`useCallback`
 
-## Deploy on Vercel
+- [函数记忆化](./app/use-callback/page.tsx)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`memo`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [组件记忆化](./app/memo/page.tsx)
