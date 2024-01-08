@@ -16,7 +16,13 @@
 
 [读取 context](./app/use-context/page.tsx)
 
+`useReducer`
+
 ---
+
+`useState` & `flushSync`
+
+[状态管理、异步批处理、同步更新、用 key 初始化 state、用 use-immer 优化对象/数组更新](./app/use-state/page.tsx)
 
 `useMemo`
 
@@ -30,15 +36,9 @@
 
 [组件记忆化](./app/memo/page.tsx)
 
----
-
-`useState` & `flushSync`
-
-[状态管理、异步批处理、同步更新、用 key 初始化 state、用 use-immer 优化对象/数组更新](./app/use-state/page.tsx)
-
 `useDeferredValue`
 
-`useReducer`
+[UI 延迟更新](./app/use-deferred-value/page.tsx)
 
 ---
 
