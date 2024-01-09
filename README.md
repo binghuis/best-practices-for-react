@@ -62,6 +62,9 @@
 
 ---
 
-<details><summary>什么时候用 `memo`、`useMemo` 和 `useCallback`、`useDeferredValue `</summary>
+<details>
+<summary>
+<b>什么时候用 `memo`、`useMemo` 和 `useCallback`、`useDeferredValue`</b>
+</summary>
 <img src='./app/assets/when-to-use-memo.png' />
 </details>
