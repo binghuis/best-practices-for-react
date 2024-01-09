@@ -1,0 +1,53 @@
+{
+  "React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type Props = {",
+      "",
+      "};",
+      "",
+      "const ${1:ComponentName}: React.FC<Props> = (props) => {",
+      "  return (",
+      "    <div>",
+      "      $0",
+      "    </div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "创建函数组件"
+  },
+  "useState Hook": {
+    "prefix": "us",
+    "body": ["const [${1:state}, set${2:State}] = useState(${3:initialValue});", "$0"],
+    "description": "插入 useState"
+  },
+  "useEffect Hook": {
+    "prefix": "ue",
+    "body": ["useEffect(() => {", "$1", "}, [${2}]);", "$0"],
+    "description": "插入 useEffect"
+  },
+  "useContext Hook": {
+    "prefix": "uc",
+    "body": ["const ${1:context} = useContext(${2:Context});", "$0"],
+    "description": "插入 useContext"
+  },
+  "useRef Hook": {
+    "prefix": "ur",
+    "body": ["const ${1:ref} = useRef(${2:null});", "$0"],
+    "description": "插入 useRef"
+  },
+  "useCallback Hook": {
+    "prefix": "ucb",
+    "body": ["const ${1:memoizedFn} = useCallback(() => {", "$2", "}, [${3}]);", "$0"],
+    "description": "插入 useCallback"
+  },
+  "useMemo Hook": {
+    "prefix": "um",
+    "body": ["const ${1:memoizedVal} = useMemo(() => {", "$2", "}, [${3}]);", "$0"],
+    "description": "插入 useMemo"
+  }
+}

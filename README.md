@@ -44,9 +44,9 @@
 
 ---
 
-`useEffect`
+`useEffect` & `useLayoutEffect`
 
-`useLayoutEffect`
+[副作用处理]('./app/use-effect/page.tsx')
 
 `useEffectEvent`
 
