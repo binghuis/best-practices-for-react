@@ -2,17 +2,10 @@
 import { memo, useState } from "react";
 import { flushSync } from "react-dom";
 
-export default function Page() {
-  return (
-    <div>
-      <Parent />
-    </div>
-  );
-}
 // useState 是函数式组件的状态管理工具，它的作用是在函数式组件中声明一个状态变量，当状态变量发生变化时，组件会重新渲染。
 // useState 只会在组件初始化渲染的时候执行一次，在组件重渲染时不会重新声明，它会保留之前的状态。
 // state 具有异步批处理特性，也就是在同一个事件处理函数里面，setState 会被加入队列，在事件处理程序执行完毕之后，才会批量更新 state。
-const Parent = () => {
+export default function Page() {
   const [count, setCount] = useState(0);
   return (
     <div>
@@ -29,7 +22,7 @@ const Parent = () => {
       </div>
     </div>
   );
-};
+}
 
 // 组件 ChildA 只会在初始化的时候，初始化 count 状态，之后不会再次初始化。
 const ChildA = (props: { count: number }) => {

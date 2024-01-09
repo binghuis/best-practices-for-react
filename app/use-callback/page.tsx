@@ -1,6 +1,7 @@
 "use client";
 import React, { useCallback, useEffect, useMemo } from "react";
 
+// useCallback 用来记忆化函数。
 const Page: React.FC = () => {
   const [count1, setCount1] = React.useState(0);
   const [count2, setCount2] = React.useState(0);

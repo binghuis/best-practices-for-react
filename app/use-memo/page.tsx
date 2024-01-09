@@ -1,11 +1,11 @@
 "use client";
 import React, { useMemo } from "react";
 
+// useMemo 值缓存，只有当依赖项变化时才会重新计算。
 const Page: React.FC = () => {
   const [count1, setCount1] = React.useState(0);
   const [count2, setCount2] = React.useState(0);
 
-  // useMemo 值缓存，只有当依赖项变化时才会重新计算。
   const memoCount = useMemo(() => {
     console.log("memoCount");
     return count1 ** 2;
