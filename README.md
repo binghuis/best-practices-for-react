@@ -59,3 +59,11 @@
 `useImperativeHandle`
 
 `forwardRef`
+
+---
+
+**什么时候用 `memo`、`useMemo` 和 `useCallback`、`useDeferredValue `**
+
+![when-to-use-memo](./app/assets/when-to-use-memo-1.png)
+![when-to-use-memo](./app/assets/when-to-use-memo-2.png)
+![when-to-use-memo](./app/assets/when-to-use-memo-3.png)

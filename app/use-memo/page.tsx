@@ -7,6 +7,8 @@ const Page: React.FC = () => {
   const [count2, setCount2] = React.useState(0);
 
   const memoCount = useMemo(() => {
+    let now = performance.now();
+    while (performance.now() - now < 1000) {}
     console.log("memoCount");
     return count1 ** 2;
   }, [count1]);
