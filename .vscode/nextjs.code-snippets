@@ -36,7 +36,7 @@
   "useState Hook": {
     "prefix": "us",
     "body": [
-      "const [${1:state}, set${2:State}] = useState(${3:initialValue});",
+      "const [${1:state}, set${2:State}] = useState(${3:initVal});",
       "$0"
     ],
     "description": "插入 useState",
@@ -80,6 +80,22 @@
       "$0"
     ],
     "description": "插入 useMemo",
+    "scope": "typescriptreact"
+  },
+  "Custom Hook": {
+    "prefix": "rch",
+    "body": [
+      "type InitVal = {};",
+      "",
+      "const use${1:CustomHook} = (initVal: InitVal) => {",
+      "  const {} = initVal;",
+      "  return {};",
+      "};",
+      "",
+      "export default use${1:CustomHook};",
+      "$0"
+    ],
+    "description": "创建自定义 Hook",
     "scope": "typescriptreact"
   }
 }
